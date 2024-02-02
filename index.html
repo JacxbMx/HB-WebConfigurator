@@ -1,0 +1,169 @@
+<html>
+<head>
+    <title>Hummingbird Configurator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<link rel="stylesheet" type="text/css" href="style\style1.cs">
+<body>
+    <div class="header">
+
+        <div class="info-container" id="info-id">
+            <div class="title" id="title-id">
+                <h2 class="bold">Compact & Lightweight </h2>
+                <h2 class="light">Chassis Platform</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="header-buttons">
+            <div class="button-container" id="button-id">
+                <div class="clase-elemento">
+                    <button class="btnn-elemento" role="button" id="vehicle-class">Vehicle Class</button>
+                    <button class="button-line" id="line-class"></button>
+                </div>
+                <div class="chassis-elemento">
+                    <button class="btnn-elemento" role="button" id="chassis"> Wheelbase </button>
+                    <button class="btnn-elemento-disabled" role="button" id="chassis-disabled"> Wheelbase </button>
+                    <button class="button-line" id="line-chassis"></button>
+                </div>
+                <div class="battery-elemento">
+                    <button class="btnn-elemento" role="button" id="batteries">Battery</button>
+                    <button class="btnn-elemento-disabled" role="button" id="batteries-disabled"> Battery </button>
+                    <button class="button-line" id="line-battery"></button>
+                </div>
+                <div class="steer-elemento">
+                    <button class="btnn-elemento" role="button" id="steering">Steering</button>
+                    <button class="btnn-elemento-disabled" role="button" id="steering-disabled">Steering</button>
+                    <button class="button-line" id="line-steer"></button>
+                </div>
+                <div class="drive-elemento">
+                    <button class="btnn-elemento" role="button" id="drive">Drive</button>
+                    <button class="btnn-elemento-disabled" role="button" id="drive-disabled">Drive</button>
+                    <button class="button-line" id="line-drive"></button>
+                </div>
+                <div class="motor-elemento">
+                    <button class="btnn-elemento" role="button" id="engines">Motor</button>
+                    <button class="btnn-elemento-disabled" role="button" id="engines-disabled">Motor</button>
+                    <button class="button-line" id="line-engine"></button>
+                </div>
+                <div class="finish-elemento" id="element-finish">
+                    <button class="btnn-elemento" role="button" id="finish">Finish</button>
+                    <button class="btnn-elemento-disabled" role="button" id="finish-disabled">Finish</button>
+                    <button class="button-line" id="line-finish"></button>
+                </div>
+                <div class="back-elemento" id="element-back">
+                    <button class="btnn-elemento-final" role="button" id="back">Return to Configurator</button>
+                    <button class="btnn-elemento-disabled-final" role="button" id="back-disabled">Return to Configurator</button>
+                    <button class="button-line-final" id="line-back"></button>
+                </div>
+                <div class="send-elemento" id="element-send">
+                    <button class="btnn-elemento-final" role="button" id="send">Send Configuration</button>
+                    <button class="button-line-final" id="line-send"></button>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="iframe-container">
+            <iframe title="Sketchfab Viewer" src="" id="api-frame"></iframe>
+
+        </div>
+
+        <div class="config-buttons">
+            <div class="classe-option-container" id="class-option-id">
+                <button class="btnn-option" role="button" id="class1">Class 5  (GVWR - 16000lbs)</button>
+                <button class="button-line-options" id="line-class-1"></button>
+                <button class="btnn-option" role="button" id="class2">Class 6  (GVWR - 26000lbs)</button>
+                <button class="button-line-options" id="line-class-2"></button>
+                <button class="btnn-option" role="button" id="class3">Class 7  (GVWR - 33000lbs)</button>
+            </div>
+
+            <div class="chassis-options">
+                <div class="chassis-option-container" id="chassis-option-id">
+                    <button class="btnn-option" role="button" id="chassis1">150 inch</button>
+                    <button class="button-line-options" id="line-chassis-1"></button>
+                    <button class="btnn-option" role="button" id="chassis2">190 inch</button>
+                    <button class="button-line-options" id="line-chassis-2"></button>
+                    <button class="btnn-option" role="button" id="chassis3">252 inch</button>
+                </div>
+                <div class="chassis-option-container" id="chassis-option2-id">
+                    <button class="btnn-option" role="button" id="chassis1.2">12.5 ft</button>
+                    <button class="button-line-options" id="line-chassis-1.2"></button>
+                    <button class="btnn-option" role="button" id="chassis2.2">15.8 ft</button>
+                    <button class="button-line-options" id="line-chassis-2.2"></button>
+                    <button class="btnn-option" role="button" id="chassis3.2">21 ft</button>
+                </div>
+                
+
+                <div class="config-units">
+                    <div class="flipswitch" id="flipswitch-id">
+                        <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+                        <label class="flipswitch-label" for="fs">
+                            <div class="flipswitch-inner"></div>
+                            <div class="flipswitch-switch"></div>
+                        </label>
+                    </div>
+                    <div class="switch-units-container" id="switch-units-id">
+                        <button class="switchIn" role="button" id="inches">inch</button>
+                        <button class="switchFts" role="button" id="fts">ft</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="batteries-option-container" id="battery-option-id">
+                <button class="btnn-option" role="button" id="batteries1">70 KWh</button>
+                <button class="button-line-options" id="line-battery-1"></button>
+                <button class="btnn-option" role="button" id="batteries2">140 KWh</button>
+                <button class="button-line-options" id="line-battery-2"></button>
+                <button class="btnn-option" role="button" id="batteries3">280 KWh</button>
+                <button class="button-line-options" id="line-battery-3"></button>
+                <button class="btnn-option" role="button" id="batteries4">560 KWh</button>
+            </div>
+            <div class="steering-option-container" id="steering-option-id">
+                <button class="btnn-option" role="button" id="steering1">Front Wheel Steer (FWS)</button>
+                <button class="button-line-options" id="line-steer-1"></button>
+                <button class="btnn-option" role="button" id="steering2">All Wheel Steer (AWS)</button>
+            </div>
+            <div class="drive-option-container" id="drive-option-id">
+                <button class="btnn-option" role="button" id="drive2">Rear Wheel Drive (RWD)</button> 
+                <button class="button-line-options" id="line-drive-1"></button>
+                <button class="btnn-option" role="button" id="drive3">All Wheel Drive (AWD)</button>
+                <button class="button-line-options" id="line-drive-2"></button>
+                <button class="btnn-option" role="button" id="drive1">Front Wheel Drive (FWD)</button>
+            </div>
+            <div class="motor-option-container" id="engine-option-id">
+                <button class="btnn-option" role="button" id="engine1">Single (245hp - 2964lb-ft)</button>
+                <button class="button-line-options" id="line-engine-1"></button>
+                <button class="btnn-option" role="button" id="engine2">Dual (490hp - 5927lb-ft)</button>
+                <button class="button-line-options" id="line-engine-2"></button>
+                <button class="btnn-option" role="button" id="engine3">Triple (735hp - 8892lb-ft)</button>
+                <button class="button-line-options" id="line-engine-3"></button>
+                <button class="btnn-option" role="button" id="engine4">Quad (980hp - 11854lb-ft)</button>
+            </div>
+
+            <div class="holder-position">
+                <button class="bttn-option-holder" id="option-holder">Holder</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
